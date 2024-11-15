@@ -1,0 +1,102 @@
+Reset default styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+   /* Basic styling for body */
+   body {
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: Arial, sans-serif;
+    background-color: #91BFC0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px; /* Adjusted for sticky navbar */
+  }
+  
+  /* Intro section styling */
+  .intro {
+    text-align: center;
+    background-color: #f0e8e8;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+  
+  .factory-name {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    color: #ffa500;
+    margin-bottom: 1rem;
+  }
+  
+  .established {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .owner-staff {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .owner, .staff {
+    text-align: center;
+  }
+  
+  .owner-image, .staff-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-factory {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 600px) {
+    .intro {
+      padding: 1.5rem;
+    }
+  
+    .factory-name {
+      font-size: 2rem;
+    }
+  
+    .tagline {
+      font-size: 1.2rem;
+    }
+  
+    .owner-staff {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .owner-image, .staff-image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  

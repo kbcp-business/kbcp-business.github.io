@@ -1,0 +1,128 @@
+body {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: Arial, sans-serif;
+    background-color: #91BFC0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px; /* Adjusted for sticky navbar */
+  }
+.reviews-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.reviews-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.reviews-slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.review-card {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    text-align: center;
+}
+
+.review-card.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.review-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.review-card h4 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.prev, .next {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    
+    .reviews-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .review-card {
+        padding: 5px;
+        /* margin: 0 10px; */
+    
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .review-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .review-card p {
+        font-size: 0.9rem;
+    }
+
+    .review-card h4 {
+        font-size: 0.9rem;
+    }
+
+    .prev, .next {
+        width: 35px;
+        height: 35px;
+    }
+}
