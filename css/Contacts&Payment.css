@@ -1,0 +1,144 @@
+/* Basic styles for body */
+body {
+    /* font-family: Arial, sans-serif;
+    background-color: #91BFC0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 10%;
+    padding: 20px; */
+
+    
+    font-family: Arial, sans-serif;
+    background-color: #91BFC0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* margin-bottom: 5%; */
+    
+  }
+  
+  /* Payment section styling */
+  .payment-section {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .payment-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Payment cards container */
+  .payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  /* Payment card styling */
+  .payment-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: calc(50% - 1.5rem); /* Two cards per row */
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .payment-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .payment-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .payment-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  .upi1{
+    width: 100%;
+  }
+  
+  .upi2{
+    width: 100%;
+  }
+  
+  /* QR code and payment icon styles */
+  .qr-code, .payment-icon {
+    width: 80px;
+    height: auto;
+    margin: 0.5rem 0;
+  }
+  .contact-us {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover .contact-icon {
+    transform: scale(1.1);
+}
+
+.contact-item p a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.contact-item p a:hover {
+    color: #007bff; /* Change this to your desired hover color */
+}
+
+  
+  /* Responsive layout */
+  @media (max-width: 600px) {
+    
+    .payment-card {
+      margin-top: 10%;
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .payment-card h2 {
+      font-size: 1.1rem;
+    }
+  }
+  
