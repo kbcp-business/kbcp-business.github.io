@@ -23,6 +23,13 @@ body {
     /* margin-bottom: 5%; */
     
   }
+  .map-container {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
   
   /* Payment section styling */
   .payment-section {
