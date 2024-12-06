@@ -145,6 +145,12 @@
   
   /* Responsive adjustments for smaller screens */
   @media (max-width: 600px) {
+    .factory-name{
+    
+      overflow: hidden;
+      white-space: wrap;
+      animation: typing 3s steps(100, end), blink 0.7s step-end infinite alternate;
+    }
     .navbar {
       /* margin-bottom: 100%; */
       flex-direction: column;
